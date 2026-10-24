@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_276244d91b4d403ac27179e392426948 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_276244d91b4d403ac27179e392426948" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_276244d91b4d403ac27179e392426948 = L.map(
+                "map_276244d91b4d403ac27179e392426948",
+                {
+                    center: [37.53671159990675, 126.96477084344191],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5576680af5086ec597ed8570a7df737a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5576680af5086ec597ed8570a7df737a.addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            var poly_line_631bde35a8b1e360646d7550bdd81a31 = L.polyline(
+                [[37.61229922619042, 127.02983785913568], [37.612280875792386, 127.03000470558955], [37.61145468050112, 127.03017122559677], [37.61038775067537, 127.03011906314828], [37.61003023345608, 127.03008525511437], [37.60957850219033, 127.0300137377937], [37.609272803968736, 127.0299618387834], [37.609178955774254, 127.03011200577721], [37.60934174952312, 127.03051215350192], [37.60939775295683, 127.03057959852923], [37.61021068887496, 127.03043609588805], [37.611130835956565, 127.03053535898245], [37.61173158737961, 127.03046967866857], [37.61219646295903, 127.03038596207092], [37.61251591876021, 127.0303171687533]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_631bde35a8b1e360646d7550bdd81a31.bindTooltip(
+                `<div>
+                     2위 실제 보행경로
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_c914ec65132a2903f2848c69fad0080e = L.polyline(
+                [[37.61229922619042, 127.02983785913568], [37.61251591876021, 127.0303171687533]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": "8,8", "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_c914ec65132a2903f2848c69fad0080e.bindTooltip(
+                `<div>
+                     2위 직선거리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_7ca63b0d6e6e48045bc191efab3d87cc = L.polyline(
+                [[37.609178955774254, 127.03011200577721], [37.60934174952312, 127.03051215350192]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.95, "smoothFactor": 1.0, "stroke": true, "weight": 9}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_7ca63b0d6e6e48045bc191efab3d87cc.bindTooltip(
+                `<div>
+                     2위 사용 횡단보도 LINK 35713
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_0a3a6c1a90abcb1bf9fbde1c4ef842d1 = L.polyline(
+                [[37.60934174952312, 127.03051215350192], [37.60939775295683, 127.03057959852923]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.95, "smoothFactor": 1.0, "stroke": true, "weight": 9}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_0a3a6c1a90abcb1bf9fbde1c4ef842d1.bindTooltip(
+                `<div>
+                     2위 사용 횡단보도 LINK 103543
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bd2b83e21b65647101ff48515ffe8cb3 = L.marker(
+                [37.61240757247532, 127.03007751394449],
+                {
+}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+        var popup_e00a0099dc687d0efe0ab167e7f5c938 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5a8bbe6d1d9f3dfabe9d4b64af185719 = $(`<div id="html_5a8bbe6d1d9f3dfabe9d4b64af185719" style="width: 100.0%; height: 100.0%;">     <b>2위</b><br>     판정: 추가확인<br><br>      직선거리: 48.7m<br>     네트워크거리: 769.6m<br>     우회거리: 720.9m<br>     우회비율: 15.82배     </div>`)[0];
+                popup_e00a0099dc687d0efe0ab167e7f5c938.setContent(html_5a8bbe6d1d9f3dfabe9d4b64af185719);
+            
+        
+
+        marker_bd2b83e21b65647101ff48515ffe8cb3.bindPopup(popup_e00a0099dc687d0efe0ab167e7f5c938)
+        ;
+
+        
+    
+    
+            marker_bd2b83e21b65647101ff48515ffe8cb3.bindTooltip(
+                `<div>
+                     2위 | 추가확인
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_4d25e973789c4d844294b77d6b72dbf5 = L.polyline(
+                [[37.476629548326024, 126.96420426415926], [37.47676438918462, 126.96386763791283], [37.476929172722066, 126.96345625574232], [37.47703397234863, 126.9631570800266], [37.477157833175056, 126.96282798152409], [37.47742555899802, 126.96223476601911], [37.47778193451659, 126.96131408641001], [37.47810143750523, 126.96149040778076], [37.47798709869848, 126.9617656646575], [37.477931586098975, 126.96191010117236], [37.47775366942466, 126.96237301251605], [37.47768101993448, 126.96251797005942], [37.47750226364741, 126.96297548722303], [37.477366288402656, 126.96335117599381], [37.47725785635816, 126.96365076174811], [37.47708498426669, 126.96406154973856], [37.47699154876223, 126.96428357401896], [37.47704691838842, 126.9645644555598]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_4d25e973789c4d844294b77d6b72dbf5.bindTooltip(
+                `<div>
+                     6위 실제 보행경로
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_cf279dabf27f9a9c50793d10e7b43949 = L.polyline(
+                [[37.476629548326024, 126.96420426415926], [37.47704691838842, 126.9645644555598]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": "8,8", "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_cf279dabf27f9a9c50793d10e7b43949.bindTooltip(
+                `<div>
+                     6위 직선거리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_d4bcdbb4877ab6f2ee83777f9f4c772f = L.polyline(
+                [[37.47778193451659, 126.96131408641001], [37.47810143750523, 126.96149040778076]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.95, "smoothFactor": 1.0, "stroke": true, "weight": 9}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_d4bcdbb4877ab6f2ee83777f9f4c772f.bindTooltip(
+                `<div>
+                     6위 사용 횡단보도 LINK 130418
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6888eb98891230ccd9594f05bd199ba5 = L.marker(
+                [37.47683823335722, 126.96438435985954],
+                {
+}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+        var popup_78c4c9ce2e8db1996dc8ab632fd88159 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e679a8875e4179840842308b27dca005 = $(`<div id="html_e679a8875e4179840842308b27dca005" style="width: 100.0%; height: 100.0%;">     <b>6위</b><br>     판정: 추가확인<br><br>      직선거리: 56.2m<br>     네트워크거리: 634.9m<br>     우회거리: 578.7m<br>     우회비율: 11.30배     </div>`)[0];
+                popup_78c4c9ce2e8db1996dc8ab632fd88159.setContent(html_e679a8875e4179840842308b27dca005);
+            
+        
+
+        marker_6888eb98891230ccd9594f05bd199ba5.bindPopup(popup_78c4c9ce2e8db1996dc8ab632fd88159)
+        ;
+
+        
+    
+    
+            marker_6888eb98891230ccd9594f05bd199ba5.bindTooltip(
+                `<div>
+                     6위 | 추가확인
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a3c2f0363ac75a68f863053022272eb4 = L.polyline(
+                [[37.48844115687705, 126.9577589970253], [37.4887975390066, 126.95756901992426], [37.48912689254213, 126.95731127878047], [37.490557749350366, 126.95636833799297], [37.49067129986562, 126.95673427847996], [37.49014459484736, 126.95709210311784], [37.4899423776947, 126.95722948071189], [37.489105491431445, 126.95787384481922], [37.48916052793965, 126.95804810708384], [37.489208221409086, 126.95819911992841], [37.48890052606261, 126.95861951119318], [37.48867905451028, 126.9585044121404], [37.48872070850977, 126.95829030646667]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_a3c2f0363ac75a68f863053022272eb4.bindTooltip(
+                `<div>
+                     7위 실제 보행경로
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_55371eb9dd4b111b91cad6359efd86ee = L.polyline(
+                [[37.48844115687705, 126.9577589970253], [37.48872070850977, 126.95829030646667]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": "8,8", "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_55371eb9dd4b111b91cad6359efd86ee.bindTooltip(
+                `<div>
+                     7위 직선거리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_404f271464dcf072d1c8720d7456033f = L.polyline(
+                [[37.490557749350366, 126.95636833799297], [37.49067129986562, 126.95673427847996]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.95, "smoothFactor": 1.0, "stroke": true, "weight": 9}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_404f271464dcf072d1c8720d7456033f.bindTooltip(
+                `<div>
+                     7위 사용 횡단보도 LINK 247936
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a60c85278f3556bf786a3ff021c8f6a6 = L.marker(
+                [37.48858093269341, 126.95802465174597],
+                {
+}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+        var popup_059de6907a9092e7f06cc06f1bcd4475 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f820d9bb74ae3b3e612889a448f7e985 = $(`<div id="html_f820d9bb74ae3b3e612889a448f7e985" style="width: 100.0%; height: 100.0%;">     <b>7위</b><br>     판정: 유지<br><br>      직선거리: 56.3m<br>     네트워크거리: 631.6m<br>     우회거리: 575.3m<br>     우회비율: 11.22배     </div>`)[0];
+                popup_059de6907a9092e7f06cc06f1bcd4475.setContent(html_f820d9bb74ae3b3e612889a448f7e985);
+            
+        
+
+        marker_a60c85278f3556bf786a3ff021c8f6a6.bindPopup(popup_059de6907a9092e7f06cc06f1bcd4475)
+        ;
+
+        
+    
+    
+            marker_a60c85278f3556bf786a3ff021c8f6a6.bindTooltip(
+                `<div>
+                     7위 | 유지
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_5da88e8ce8a3077f5a7d907ccdd6298a = L.polyline(
+                [[37.49851397123042, 126.93343495781866], [37.498428945115464, 126.93281746391766], [37.49828706779481, 126.93284057030475], [37.49815894137809, 126.9328981331576], [37.49791866433349, 126.93293568930578], [37.497872906280165, 126.93295870938186], [37.49736956574842, 126.93320905598861], [37.49812535938252, 126.93422521388847], [37.4979103581667, 126.93444657694569], [37.49780287092257, 126.93458167331613], [37.49788532723096, 126.93470511436676], [37.49797679313991, 126.93456715960463], [37.49806609129835, 126.93464750893948], [37.49830193458859, 126.93486847904421], [37.49846900383283, 126.93487695119094], [37.49862909640904, 126.93468435979575], [37.49866570375244, 126.93466709336221], [37.49885099556305, 126.93452043790442], [37.49872937913763, 126.93394031379968]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_5da88e8ce8a3077f5a7d907ccdd6298a.bindTooltip(
+                `<div>
+                     8위 실제 보행경로
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_738fc01faf6437323ed2d111a93e6b96 = L.polyline(
+                [[37.49851397123042, 126.93343495781866], [37.49872937913763, 126.93394031379968]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": "8,8", "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_738fc01faf6437323ed2d111a93e6b96.bindTooltip(
+                `<div>
+                     8위 직선거리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_3af4bb72bc804be0192318c6181c1e6d = L.polyline(
+                [[37.49780287092257, 126.93458167331613], [37.49788532723096, 126.93470511436676]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.95, "smoothFactor": 1.0, "stroke": true, "weight": 9}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_3af4bb72bc804be0192318c6181c1e6d.bindTooltip(
+                `<div>
+                     8위 사용 횡단보도 LINK 227899
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a9d2b8f6b8f5983c3b467b2f635dc4df = L.marker(
+                [37.498621675184026, 126.93368763580918],
+                {
+}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+        var popup_f768cc041f133a63f290a1d2c266d072 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a18facdafcb9c955dce07ebb9f134aa7 = $(`<div id="html_a18facdafcb9c955dce07ebb9f134aa7" style="width: 100.0%; height: 100.0%;">     <b>8위</b><br>     판정: 유지<br><br>      직선거리: 50.7m<br>     네트워크거리: 552.5m<br>     우회거리: 501.8m<br>     우회비율: 10.91배     </div>`)[0];
+                popup_f768cc041f133a63f290a1d2c266d072.setContent(html_a18facdafcb9c955dce07ebb9f134aa7);
+            
+        
+
+        marker_a9d2b8f6b8f5983c3b467b2f635dc4df.bindPopup(popup_f768cc041f133a63f290a1d2c266d072)
+        ;
+
+        
+    
+    
+            marker_a9d2b8f6b8f5983c3b467b2f635dc4df.bindTooltip(
+                `<div>
+                     8위 | 유지
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_4ac40cfbf72ccdd93e2a15b2042463c9 = L.polyline(
+                [[37.52035147962166, 126.89521961937206], [37.52029681420081, 126.89551276762364], [37.52016408882202, 126.89552444569362], [37.519954799791336, 126.89695561099144], [37.52083147741291, 126.89714404143479], [37.520845103522085, 126.89702334521795], [37.52078529523968, 126.89667288825368], [37.52062920551793, 126.89613867605945], [37.520533081625054, 126.89613306277349], [37.52055104061664, 126.89573652761311], [37.52039078165623, 126.8956677924492]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_4ac40cfbf72ccdd93e2a15b2042463c9.bindTooltip(
+                `<div>
+                     11위 실제 보행경로
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_90bdf4832a63f08cd13cbb336211121a = L.polyline(
+                [[37.52035147962166, 126.89521961937206], [37.52039078165623, 126.8956677924492]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": "8,8", "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_90bdf4832a63f08cd13cbb336211121a.bindTooltip(
+                `<div>
+                     11위 직선거리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_e63d9949f1210d6b36c34061672dad5e = L.polyline(
+                [[37.52035147962166, 126.89521961937206], [37.52029681420081, 126.89551276762364]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.95, "smoothFactor": 1.0, "stroke": true, "weight": 9}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_e63d9949f1210d6b36c34061672dad5e.bindTooltip(
+                `<div>
+                     11위 사용 횡단보도 LINK 199331
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_2c908d6be44e5f80eb179687092116d8 = L.polyline(
+                [[37.52029681420081, 126.89551276762364], [37.52016408882202, 126.89552444569362]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.95, "smoothFactor": 1.0, "stroke": true, "weight": 9}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_2c908d6be44e5f80eb179687092116d8.bindTooltip(
+                `<div>
+                     11위 사용 횡단보도 LINK 139914
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_85c06c56b5b70b38c83d68a58041a44f = L.marker(
+                [37.52037113063895, 126.89544370591062],
+                {
+}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+        var popup_f539d2d2351a9998b5a13edd7bf8049f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e9b2a1be4eac12c161825b240a266911 = $(`<div id="html_e9b2a1be4eac12c161825b240a266911" style="width: 100.0%; height: 100.0%;">     <b>11위</b><br>     판정: 유지<br><br>      직선거리: 39.8m<br>     네트워크거리: 446.3m<br>     우회거리: 406.5m<br>     우회비율: 11.20배     </div>`)[0];
+                popup_f539d2d2351a9998b5a13edd7bf8049f.setContent(html_e9b2a1be4eac12c161825b240a266911);
+            
+        
+
+        marker_85c06c56b5b70b38c83d68a58041a44f.bindPopup(popup_f539d2d2351a9998b5a13edd7bf8049f)
+        ;
+
+        
+    
+    
+            marker_85c06c56b5b70b38c83d68a58041a44f.bindTooltip(
+                `<div>
+                     11위 | 유지
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a3c5cbad2cf8035c2900a9817b29bbea = L.polyline(
+                [[37.57922027781727, 126.99664660219557], [37.5790178889804, 126.99667026712851], [37.57901082505291, 126.99653720326526], [37.57913555294888, 126.99651945556893], [37.580258103591035, 126.99635380957449], [37.58112179240684, 126.99647205006308], [37.581277109002514, 126.99629166138133], [37.581302986663495, 126.99600482407679], [37.58124543091878, 126.99589482918789], [37.58102937853867, 126.99592139851227], [37.5795264064676, 126.99614868976936]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_a3c5cbad2cf8035c2900a9817b29bbea.bindTooltip(
+                `<div>
+                     12위 실제 보행경로
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_5ffb57c1c96f266ceda975d4cb07cf5e = L.polyline(
+                [[37.57922027781727, 126.99664660219557], [37.5795264064676, 126.99614868976936]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": "8,8", "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_5ffb57c1c96f266ceda975d4cb07cf5e.bindTooltip(
+                `<div>
+                     12위 직선거리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_0ab04cc249ceb9dd5785b1ac401b7c7a = L.polyline(
+                [[37.57922027781727, 126.99664660219557], [37.5790178889804, 126.99667026712851]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.95, "smoothFactor": 1.0, "stroke": true, "weight": 9}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_0ab04cc249ceb9dd5785b1ac401b7c7a.bindTooltip(
+                `<div>
+                     12위 사용 횡단보도 LINK 171601
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_ca747430510e5f7de821360fe577da73 = L.polyline(
+                [[37.5790178889804, 126.99667026712851], [37.57901082505291, 126.99653720326526]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.95, "smoothFactor": 1.0, "stroke": true, "weight": 9}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_ca747430510e5f7de821360fe577da73.bindTooltip(
+                `<div>
+                     12위 사용 횡단보도 LINK 60089
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ad9d629bd0e37d8771f44db1333cf55a = L.marker(
+                [37.57937334214243, 126.99639764598246],
+                {
+}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+        var popup_80b33f19fe7fac1cf48d45ebd09d4bc9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6963b1188499841d6545a77ffcbf7034 = $(`<div id="html_6963b1188499841d6545a77ffcbf7034" style="width: 100.0%; height: 100.0%;">     <b>12위</b><br>     판정: 추가확인<br><br>      직선거리: 55.6m<br>     네트워크거리: 586.4m<br>     우회거리: 530.9m<br>     우회비율: 10.56배     </div>`)[0];
+                popup_80b33f19fe7fac1cf48d45ebd09d4bc9.setContent(html_6963b1188499841d6545a77ffcbf7034);
+            
+        
+
+        marker_ad9d629bd0e37d8771f44db1333cf55a.bindPopup(popup_80b33f19fe7fac1cf48d45ebd09d4bc9)
+        ;
+
+        
+    
+    
+            marker_ad9d629bd0e37d8771f44db1333cf55a.bindTooltip(
+                `<div>
+                     12위 | 추가확인
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_3d5f8231dae8530683f2c7377d6ab4d6 = L.polyline(
+                [[37.572772511864194, 126.80978550057694], [37.57256422459703, 126.80976590352746], [37.57225976408804, 126.80971204829171], [37.57226000386276, 126.81015179085705], [37.57242018603118, 126.8101427584901], [37.57274757308964, 126.81022243478415], [37.57310465531988, 126.81026753311448], [37.573058404058834, 126.80996862174717], [37.573218558417445, 126.80994233726179], [37.57314262051119, 126.8093935212698], [37.57307339818944, 126.80904291395446], [37.57381909085314, 126.80881673611404], [37.57396224224442, 126.80988869169717], [37.57324843406346, 126.81001989398753]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_3d5f8231dae8530683f2c7377d6ab4d6.bindTooltip(
+                `<div>
+                     13위 실제 보행경로
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_6314a5ca3f829be4098b26c660529f67 = L.polyline(
+                [[37.572772511864194, 126.80978550057694], [37.57324843406346, 126.81001989398753]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": "8,8", "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_6314a5ca3f829be4098b26c660529f67.bindTooltip(
+                `<div>
+                     13위 직선거리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_86077b93c142ebb98971fa2f8c397f3e = L.polyline(
+                [[37.573058404058834, 126.80996862174717], [37.573218558417445, 126.80994233726179]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.95, "smoothFactor": 1.0, "stroke": true, "weight": 9}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_86077b93c142ebb98971fa2f8c397f3e.bindTooltip(
+                `<div>
+                     13위 사용 횡단보도 LINK 64184
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dcb0f5d171a6ccb740d0a3ca0f7a2143 = L.marker(
+                [37.57301047296383, 126.80990269728224],
+                {
+}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+        var popup_67d5f5e724dd68a1f8968095933a1993 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9937bffcc33f56badd400dd868173167 = $(`<div id="html_9937bffcc33f56badd400dd868173167" style="width: 100.0%; height: 100.0%;">     <b>13위</b><br>     판정: 유지<br><br>      직선거리: 56.7m<br>     네트워크거리: 591.5m<br>     우회거리: 534.8m<br>     우회비율: 10.43배     </div>`)[0];
+                popup_67d5f5e724dd68a1f8968095933a1993.setContent(html_9937bffcc33f56badd400dd868173167);
+            
+        
+
+        marker_dcb0f5d171a6ccb740d0a3ca0f7a2143.bindPopup(popup_67d5f5e724dd68a1f8968095933a1993)
+        ;
+
+        
+    
+    
+            marker_dcb0f5d171a6ccb740d0a3ca0f7a2143.bindTooltip(
+                `<div>
+                     13위 | 유지
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_721706617110f56f6a04dc375ee24eda = L.polyline(
+                [[37.5756331843332, 126.97164901454666], [37.57464953533383, 126.97189480262175], [37.5744393221633, 126.97211043032341], [37.57429575837208, 126.97210161309145], [37.574208777757654, 126.97251857132416], [37.57418771859485, 126.97264370479462], [37.57456028787581, 126.97266360563322], [37.57515333998238, 126.97267817299166], [37.575515766799974, 126.97271352269816], [37.57574875086438, 126.97271639453805], [37.57578863877722, 126.97220484420401], [37.57578627216872, 126.9721486648552], [37.576080445877714, 126.97216038275491], [37.57615810839242, 126.97216626757961], [37.57612276592005, 126.97198886868843], [37.576115639539694, 126.97171092584563], [37.57612031787212, 126.97159264938244]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_721706617110f56f6a04dc375ee24eda.bindTooltip(
+                `<div>
+                     14위 실제 보행경로
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_9a948f20f264cf3195197260104de633 = L.polyline(
+                [[37.5756331843332, 126.97164901454666], [37.57612031787212, 126.97159264938244]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": "8,8", "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_9a948f20f264cf3195197260104de633.bindTooltip(
+                `<div>
+                     14위 직선거리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_f8a0ce291af9f39e5a24f0dcc8770da9 = L.polyline(
+                [[37.57578627216872, 126.9721486648552], [37.576080445877714, 126.97216038275491]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.95, "smoothFactor": 1.0, "stroke": true, "weight": 9}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_f8a0ce291af9f39e5a24f0dcc8770da9.bindTooltip(
+                `<div>
+                     14위 사용 횡단보도 LINK 164708
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7f7369b7caf80b6b84ef188b55cc7d87 = L.marker(
+                [37.575876751102655, 126.97162083196454],
+                {
+}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+        var popup_79045e8d766b647f8a6ae1773f216ebd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_08f76d59edf78c3f5c59d7d30901214c = $(`<div id="html_08f76d59edf78c3f5c59d7d30901214c" style="width: 100.0%; height: 100.0%;">     <b>14위</b><br>     판정: 추가확인<br><br>      직선거리: 54.3m<br>     네트워크거리: 557.0m<br>     우회거리: 502.7m<br>     우회비율: 10.26배     </div>`)[0];
+                popup_79045e8d766b647f8a6ae1773f216ebd.setContent(html_08f76d59edf78c3f5c59d7d30901214c);
+            
+        
+
+        marker_7f7369b7caf80b6b84ef188b55cc7d87.bindPopup(popup_79045e8d766b647f8a6ae1773f216ebd)
+        ;
+
+        
+    
+    
+            marker_7f7369b7caf80b6b84ef188b55cc7d87.bindTooltip(
+                `<div>
+                     14위 | 추가확인
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_1bf59a675c3b32e059d56e2e1b7dc286 = L.polyline(
+                [[37.55229415478952, 127.14435704677638], [37.55262593861229, 127.14440080410661], [37.552767820305135, 127.1444068268477], [37.55332154201892, 127.14449125631305], [37.5537195733493, 127.14463287697015], [37.55412820982411, 127.14545578806674], [37.55443478390079, 127.14552824797437], [37.55448295984756, 127.14543348104846], [37.554624837897784, 127.14544238047061], [37.55464981167346, 127.14467384077344], [37.554540194685764, 127.14448390750293], [37.55371531642507, 127.1443712861114], [37.55367870701571, 127.1443654664235], [37.5532096432035, 127.1442955732574], [37.55322588406763, 127.14411451008544], [37.55229342998172, 127.14401354504031]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_1bf59a675c3b32e059d56e2e1b7dc286.bindTooltip(
+                `<div>
+                     15위 실제 보행경로
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_8b7874209df84dc0e2218b3c0cfa1ee7 = L.polyline(
+                [[37.55229415478952, 127.14435704677638], [37.55229342998172, 127.14401354504031]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": "8,8", "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_8b7874209df84dc0e2218b3c0cfa1ee7.bindTooltip(
+                `<div>
+                     15위 직선거리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_c9bdf9f4a870612e04a56bb2bc4aa327 = L.polyline(
+                [[37.5532096432035, 127.1442955732574], [37.55322588406763, 127.14411451008544]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.95, "smoothFactor": 1.0, "stroke": true, "weight": 9}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_c9bdf9f4a870612e04a56bb2bc4aa327.bindTooltip(
+                `<div>
+                     15위 사용 횡단보도 LINK 219773
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b2a2c9b9eb31af801bd25405d7250661 = L.marker(
+                [37.55229379238562, 127.14418529590834],
+                {
+}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+        var popup_e9529f29d1a565e7304e4d9fac23903b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4fe4052df848154ba96b2c380c911398 = $(`<div id="html_4fe4052df848154ba96b2c380c911398" style="width: 100.0%; height: 100.0%;">     <b>15위</b><br>     판정: 추가확인<br><br>      직선거리: 30.3m<br>     네트워크거리: 686.8m<br>     우회거리: 656.4m<br>     우회비율: 22.64배     </div>`)[0];
+                popup_e9529f29d1a565e7304e4d9fac23903b.setContent(html_4fe4052df848154ba96b2c380c911398);
+            
+        
+
+        marker_b2a2c9b9eb31af801bd25405d7250661.bindPopup(popup_e9529f29d1a565e7304e4d9fac23903b)
+        ;
+
+        
+    
+    
+            marker_b2a2c9b9eb31af801bd25405d7250661.bindTooltip(
+                `<div>
+                     15위 | 추가확인
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_0d9e19b784137ff100ac86e91505dbef = L.polyline(
+                [[37.504960169045354, 126.94221513040638], [37.504800355551964, 126.94300810771905], [37.50472036134151, 126.94322649044912], [37.50439532051301, 126.94308884965304], [37.5044112821937, 126.94296818644622], [37.50463520442066, 126.942235489445], [37.50471517140746, 126.94196539810815], [37.50479055499809, 126.94168381912164], [37.504861156322, 126.94099145260816], [37.505028173256065, 126.94089652308966], [37.50509949681291, 126.94165772477356], [37.50527342537327, 126.94165471674621], [37.505294153997276, 126.94192185974553]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_0d9e19b784137ff100ac86e91505dbef.bindTooltip(
+                `<div>
+                     16위 실제 보행경로
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_dbc9d948b3656fa95ec2a9eee1f58d56 = L.polyline(
+                [[37.504960169045354, 126.94221513040638], [37.505294153997276, 126.94192185974553]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": "8,8", "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_dbc9d948b3656fa95ec2a9eee1f58d56.bindTooltip(
+                `<div>
+                     16위 직선거리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_f442fe985aa00a255a8012c50d31f0e1 = L.polyline(
+                [[37.50509949681291, 126.94165772477356], [37.50527342537327, 126.94165471674621]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.95, "smoothFactor": 1.0, "stroke": true, "weight": 9}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_f442fe985aa00a255a8012c50d31f0e1.bindTooltip(
+                `<div>
+                     16위 사용 횡단보도 LINK 138843
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_89794733ff0bf5a13fb4d781ac95fb5a = L.marker(
+                [37.505127161521315, 126.94206849507596],
+                {
+}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+        var popup_3891b1ed85aff748903073006a3af05c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_da1d5b3a761e0f6b9dd5e28a96191fa1 = $(`<div id="html_da1d5b3a761e0f6b9dd5e28a96191fa1" style="width: 100.0%; height: 100.0%;">     <b>16위</b><br>     판정: 유지<br><br>      직선거리: 45.2m<br>     네트워크거리: 458.0m<br>     우회거리: 412.8m<br>     우회비율: 10.13배     </div>`)[0];
+                popup_3891b1ed85aff748903073006a3af05c.setContent(html_da1d5b3a761e0f6b9dd5e28a96191fa1);
+            
+        
+
+        marker_89794733ff0bf5a13fb4d781ac95fb5a.bindPopup(popup_3891b1ed85aff748903073006a3af05c)
+        ;
+
+        
+    
+    
+            marker_89794733ff0bf5a13fb4d781ac95fb5a.bindTooltip(
+                `<div>
+                     16위 | 유지
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_4883f2e5f147ec49ba7f040017ca844d = L.polyline(
+                [[37.54225403992919, 127.01239736416095], [37.542654849181304, 127.01323225736712], [37.54349909733206, 127.01508910390916], [37.54378516685053, 127.01507191663215], [37.543673059393285, 127.01482759121556], [37.54337566432635, 127.01388194034391], [37.54330932351168, 127.01365199706797], [37.542840276121645, 127.01272931928135], [37.542595432484426, 127.01244761489416], [37.54272818549584, 127.01227806418696], [37.542698438964585, 127.01223494760265]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_4883f2e5f147ec49ba7f040017ca844d.bindTooltip(
+                `<div>
+                     18위 실제 보행경로
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_609a5902ebec38bb3330a863cf2999ca = L.polyline(
+                [[37.54225403992919, 127.01239736416095], [37.542698438964585, 127.01223494760265]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": "8,8", "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_609a5902ebec38bb3330a863cf2999ca.bindTooltip(
+                `<div>
+                     18위 직선거리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_d965d690fa2043afd595894852615521 = L.polyline(
+                [[37.542595432484426, 127.01244761489416], [37.54272818549584, 127.01227806418696]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.95, "smoothFactor": 1.0, "stroke": true, "weight": 9}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_d965d690fa2043afd595894852615521.bindTooltip(
+                `<div>
+                     18위 사용 횡단보도 LINK 60057
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d9712bf2cd7d9b93660ec01d7eee8756 = L.marker(
+                [37.542476239446884, 127.01231615588179],
+                {
+}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+        var popup_1cfaa52c65330621172a0293a774956d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_22dd3d56facb948cdec0f86f082d5eea = $(`<div id="html_22dd3d56facb948cdec0f86f082d5eea" style="width: 100.0%; height: 100.0%;">     <b>18위</b><br>     판정: 추가확인<br><br>      직선거리: 51.3m<br>     네트워크거리: 624.3m<br>     우회거리: 572.9m<br>     우회비율: 12.16배     </div>`)[0];
+                popup_1cfaa52c65330621172a0293a774956d.setContent(html_22dd3d56facb948cdec0f86f082d5eea);
+            
+        
+
+        marker_d9712bf2cd7d9b93660ec01d7eee8756.bindPopup(popup_1cfaa52c65330621172a0293a774956d)
+        ;
+
+        
+    
+    
+            marker_d9712bf2cd7d9b93660ec01d7eee8756.bindTooltip(
+                `<div>
+                     18위 | 추가확인
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_cd98b89a0fa063b8e08463d95c11783a = L.polyline(
+                [[37.513683576484716, 126.91825575237559], [37.51395325309933, 126.91771964182368], [37.5136670122493, 126.91747287812343], [37.51392250863369, 126.91691280405111], [37.514297971748825, 126.91711349945578], [37.5147238187364, 126.91736585599799], [37.51481220452419, 126.91776223851046], [37.514610612697794, 126.91792295012687], [37.514180827026344, 126.91858996121587], [37.5141809022224, 126.91869913585793], [37.514058603171115, 126.91890037952935], [37.51400796826388, 126.91890338803616], [37.51398746987303, 126.9190470607981], [37.513373842884, 126.91861677536276]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_cd98b89a0fa063b8e08463d95c11783a.bindTooltip(
+                `<div>
+                     20위 실제 보행경로
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_c391f37a8fbf4fe3a32911acb1817971 = L.polyline(
+                [[37.513683576484716, 126.91825575237559], [37.513373842884, 126.91861677536276]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": "8,8", "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_c391f37a8fbf4fe3a32911acb1817971.bindTooltip(
+                `<div>
+                     20위 직선거리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_345520afb322321064e8747edb63b408 = L.polyline(
+                [[37.514180827026344, 126.91858996121587], [37.5141809022224, 126.91869913585793]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.95, "smoothFactor": 1.0, "stroke": true, "weight": 9}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_345520afb322321064e8747edb63b408.bindTooltip(
+                `<div>
+                     20위 사용 횡단보도 LINK 41631
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_62d30817d590f944388eddc3e29e66bc = L.polyline(
+                [[37.5141809022224, 126.91869913585793], [37.514058603171115, 126.91890037952935]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.95, "smoothFactor": 1.0, "stroke": true, "weight": 9}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_62d30817d590f944388eddc3e29e66bc.bindTooltip(
+                `<div>
+                     20위 사용 횡단보도 LINK 118618
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_d6031c45bd6d227e3d29036f8ac8157d = L.polyline(
+                [[37.514058603171115, 126.91890037952935], [37.51400796826388, 126.91890338803616]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.95, "smoothFactor": 1.0, "stroke": true, "weight": 9}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+            poly_line_d6031c45bd6d227e3d29036f8ac8157d.bindTooltip(
+                `<div>
+                     20위 사용 횡단보도 LINK 848
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_08729bb060763b97a10a22832c4a313d = L.marker(
+                [37.51352870968436, 126.91843626386918],
+                {
+}
+            ).addTo(map_276244d91b4d403ac27179e392426948);
+        
+    
+        var popup_4328bc8f303497c8564d79b544a16207 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd02eb5c7fd8f1449aad31b8081d34a4 = $(`<div id="html_fd02eb5c7fd8f1449aad31b8081d34a4" style="width: 100.0%; height: 100.0%;">     <b>20위</b><br>     판정: 유지<br><br>      직선거리: 46.9m<br>     네트워크거리: 516.5m<br>     우회거리: 469.6m<br>     우회비율: 11.02배     </div>`)[0];
+                popup_4328bc8f303497c8564d79b544a16207.setContent(html_fd02eb5c7fd8f1449aad31b8081d34a4);
+            
+        
+
+        marker_08729bb060763b97a10a22832c4a313d.bindPopup(popup_4328bc8f303497c8564d79b544a16207)
+        ;
+
+        
+    
+    
+            marker_08729bb060763b97a10a22832c4a313d.bindTooltip(
+                `<div>
+                     20위 | 유지
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
