@@ -1,0 +1,1547 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>횡단 후보지 최신지도 검증</title>
+
+<style>
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 16px;
+    background: #f5f5f5;
+}
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 18px;
+}
+
+.card {
+    background: white;
+    padding: 16px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+}
+
+.rank {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.info {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 12px;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: #03c75a;
+    color: white;
+    padding: 13px;
+    border-radius: 9px;
+    font-weight: 700;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>횡단 후보지 최신지도 검증</h1>
+
+<div class="subtitle">
+후보를 누르면 정확한 A/B 좌표 기준 네이버 도보 길찾기가 열립니다.
+</div>
+
+
+    <div class="card">
+        <div class="rank">1위</div>
+
+        <div class="info">
+            직선거리 35.6m<br>
+            기존 우회거리 1149.3m<br>
+            기존 우회비율 33.3배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5415852&slng=126.9533873&sname=1%EC%9C%84%20A&dlat=37.5418072&dlng=126.9536774&dname=1%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">2위</div>
+
+        <div class="info">
+            직선거리 48.7m<br>
+            기존 우회거리 720.9m<br>
+            기존 우회비율 15.8배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.6122992&slng=127.0298379&sname=2%EC%9C%84%20A&dlat=37.6125159&dlng=127.0303172&dname=2%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">3위</div>
+
+        <div class="info">
+            직선거리 44.8m<br>
+            기존 우회거리 613.5m<br>
+            기존 우회비율 14.7배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5068109&slng=126.8775732&sname=3%EC%9C%84%20A&dlat=37.5068723&dlng=126.8770727&dname=3%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">4위</div>
+
+        <div class="info">
+            직선거리 18.4m<br>
+            기존 우회거리 487.1m<br>
+            기존 우회비율 27.5배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5672335&slng=126.9303790&sname=4%EC%9C%84%20A&dlat=37.5672758&dlng=126.9301775&dname=4%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">5위</div>
+
+        <div class="info">
+            직선거리 46.1m<br>
+            기존 우회거리 736.8m<br>
+            기존 우회비율 17.0배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.6779231&slng=127.0452173&sname=5%EC%9C%84%20A&dlat=37.6780997&dlng=127.0447435&dname=5%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">6위</div>
+
+        <div class="info">
+            직선거리 56.2m<br>
+            기존 우회거리 578.7m<br>
+            기존 우회비율 11.3배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.4766295&slng=126.9642043&sname=6%EC%9C%84%20A&dlat=37.4770469&dlng=126.9645645&dname=6%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">7위</div>
+
+        <div class="info">
+            직선거리 56.3m<br>
+            기존 우회거리 575.3m<br>
+            기존 우회비율 11.2배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.4884412&slng=126.9577590&sname=7%EC%9C%84%20A&dlat=37.4887207&dlng=126.9582903&dname=7%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">8위</div>
+
+        <div class="info">
+            직선거리 50.7m<br>
+            기존 우회거리 501.8m<br>
+            기존 우회비율 10.9배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.4985140&slng=126.9334350&sname=8%EC%9C%84%20A&dlat=37.4987294&dlng=126.9339403&dname=8%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">9위</div>
+
+        <div class="info">
+            직선거리 35.0m<br>
+            기존 우회거리 399.3m<br>
+            기존 우회비율 12.4배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.4957903&slng=127.1224414&sname=9%EC%9C%84%20A&dlat=37.4959525&dlng=127.1227806&dname=9%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">10위</div>
+
+        <div class="info">
+            직선거리 49.2m<br>
+            기존 우회거리 472.5m<br>
+            기존 우회비율 10.6배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5395577&slng=126.9869965&sname=10%EC%9C%84%20A&dlat=37.5395627&dlng=126.9864393&dname=10%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">11위</div>
+
+        <div class="info">
+            직선거리 39.8m<br>
+            기존 우회거리 406.5m<br>
+            기존 우회비율 11.2배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5203515&slng=126.8952196&sname=11%EC%9C%84%20A&dlat=37.5203908&dlng=126.8956678&dname=11%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">12위</div>
+
+        <div class="info">
+            직선거리 55.6m<br>
+            기존 우회거리 530.9m<br>
+            기존 우회비율 10.6배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5792203&slng=126.9966466&sname=12%EC%9C%84%20A&dlat=37.5795264&dlng=126.9961487&dname=12%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">13위</div>
+
+        <div class="info">
+            직선거리 56.7m<br>
+            기존 우회거리 534.8m<br>
+            기존 우회비율 10.4배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5727725&slng=126.8097855&sname=13%EC%9C%84%20A&dlat=37.5732484&dlng=126.8100199&dname=13%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">14위</div>
+
+        <div class="info">
+            직선거리 54.3m<br>
+            기존 우회거리 502.7m<br>
+            기존 우회비율 10.3배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5756332&slng=126.9716490&sname=14%EC%9C%84%20A&dlat=37.5761203&dlng=126.9715926&dname=14%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">15위</div>
+
+        <div class="info">
+            직선거리 30.3m<br>
+            기존 우회거리 656.4m<br>
+            기존 우회비율 22.6배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5522942&slng=127.1443570&sname=15%EC%9C%84%20A&dlat=37.5522934&dlng=127.1440135&dname=15%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">16위</div>
+
+        <div class="info">
+            직선거리 45.2m<br>
+            기존 우회거리 412.8m<br>
+            기존 우회비율 10.1배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5049602&slng=126.9422151&sname=16%EC%9C%84%20A&dlat=37.5052942&dlng=126.9419219&dname=16%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">17위</div>
+
+        <div class="info">
+            직선거리 58.3m<br>
+            기존 우회거리 1114.6m<br>
+            기존 우회비율 20.1배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.4988296&slng=127.0168957&sname=17%EC%9C%84%20A&dlat=37.4991847&dlng=127.0173815&dname=17%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">18위</div>
+
+        <div class="info">
+            직선거리 51.3m<br>
+            기존 우회거리 572.9m<br>
+            기존 우회비율 12.2배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5422540&slng=127.0123974&sname=18%EC%9C%84%20A&dlat=37.5426984&dlng=127.0122349&dname=18%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">19위</div>
+
+        <div class="info">
+            직선거리 54.7m<br>
+            기존 우회거리 608.7m<br>
+            기존 우회비율 12.1배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.4871194&slng=126.9133243&sname=19%EC%9C%84%20A&dlat=37.4875492&dlng=126.9130221&dname=19%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">20위</div>
+
+        <div class="info">
+            직선거리 46.9m<br>
+            기존 우회거리 469.6m<br>
+            기존 우회비율 11.0배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5136836&slng=126.9182558&sname=20%EC%9C%84%20A&dlat=37.5133738&dlng=126.9186168&dname=20%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">21위</div>
+
+        <div class="info">
+            직선거리 39.8m<br>
+            기존 우회거리 413.6m<br>
+            기존 우회비율 11.4배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5696328&slng=127.0071436&sname=21%EC%9C%84%20A&dlat=37.5698838&dlng=127.0068220&dname=21%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">22위</div>
+
+        <div class="info">
+            직선거리 38.2m<br>
+            기존 우회거리 344.2m<br>
+            기존 우회비율 10.0배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5568067&slng=127.1675332&sname=22%EC%9C%84%20A&dlat=37.5571505&dlng=127.1675136&dname=22%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">23위</div>
+
+        <div class="info">
+            직선거리 44.9m<br>
+            기존 우회거리 373.4m<br>
+            기존 우회비율 9.3배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5697416&slng=127.0045776&sname=23%EC%9C%84%20A&dlat=37.5701437&dlng=127.0045195&dname=23%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">24위</div>
+
+        <div class="info">
+            직선거리 47.8m<br>
+            기존 우회거리 453.8m<br>
+            기존 우회비율 10.5배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5608916&slng=127.0362196&sname=24%EC%9C%84%20A&dlat=37.5612830&dlng=127.0359941&dname=24%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">25위</div>
+
+        <div class="info">
+            직선거리 56.9m<br>
+            기존 우회거리 470.5m<br>
+            기존 우회비율 9.3배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5756602&slng=126.8942285&sname=25%EC%9C%84%20A&dlat=37.5759201&dlng=126.8947840&dname=25%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">26위</div>
+
+        <div class="info">
+            직선거리 52.3m<br>
+            기존 우회거리 431.6m<br>
+            기존 우회비율 9.2배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.4863296&slng=127.1289818&sname=26%EC%9C%84%20A&dlat=37.4867765&dlng=127.1287927&dname=26%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">27위</div>
+
+        <div class="info">
+            직선거리 30.0m<br>
+            기존 우회거리 336.8m<br>
+            기존 우회비율 12.2배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.4904708&slng=126.9549586&sname=27%EC%9C%84%20A&dlat=37.4907408&dlng=126.9549584&dname=27%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">28위</div>
+
+        <div class="info">
+            직선거리 39.6m<br>
+            기존 우회거리 356.1m<br>
+            기존 우회비율 10.0배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.6054168&slng=127.0922605&sname=28%EC%9C%84%20A&dlat=37.6057726&dlng=127.0922939&dname=28%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">29위</div>
+
+        <div class="info">
+            직선거리 26.9m<br>
+            기존 우회거리 702.0m<br>
+            기존 우회비율 27.1배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5755848&slng=126.9107324&sname=29%EC%9C%84%20A&dlat=37.5756912&dlng=126.9104585&dname=29%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">30위</div>
+
+        <div class="info">
+            직선거리 48.0m<br>
+            기존 우회거리 383.3m<br>
+            기존 우회비율 9.0배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.4914603&slng=126.9565936&sname=30%EC%9C%84%20A&dlat=37.4916763&dlng=126.9570645&dname=30%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">31위</div>
+
+        <div class="info">
+            직선거리 34.5m<br>
+            기존 우회거리 330.3m<br>
+            기존 우회비율 10.6배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5481517&slng=126.9775603&sname=31%EC%9C%84%20A&dlat=37.5482358&dlng=126.9779363&dname=31%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">32위</div>
+
+        <div class="info">
+            직선거리 43.8m<br>
+            기존 우회거리 827.9m<br>
+            기존 우회비율 19.9배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.6362531&slng=127.0692878&sname=32%EC%9C%84%20A&dlat=37.6366137&dlng=127.0690867&dname=32%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">33위</div>
+
+        <div class="info">
+            직선거리 54.1m<br>
+            기존 우회거리 710.0m<br>
+            기존 우회비율 14.1배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.6375897&slng=127.0672170&sname=33%EC%9C%84%20A&dlat=37.6377152&dlng=127.0678100&dname=33%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">34위</div>
+
+        <div class="info">
+            직선거리 41.8m<br>
+            기존 우회거리 331.8m<br>
+            기존 우회비율 8.9배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5894311&slng=126.9431456&sname=34%EC%9C%84%20A&dlat=37.5896572&dlng=126.9435240&dname=34%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">35위</div>
+
+        <div class="info">
+            직선거리 44.7m<br>
+            기존 우회거리 349.0m<br>
+            기존 우회비율 8.8배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5778527&slng=127.0020462&sname=35%EC%9C%84%20A&dlat=37.5778930&dlng=127.0025500&dname=35%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">36위</div>
+
+        <div class="info">
+            직선거리 55.0m<br>
+            기존 우회거리 458.4m<br>
+            기존 우회비율 9.3배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5163935&slng=126.9286650&sname=36%EC%9C%84%20A&dlat=37.5165419&dlng=126.9280715&dname=36%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">37위</div>
+
+        <div class="info">
+            직선거리 42.6m<br>
+            기존 우회거리 376.2m<br>
+            기존 우회비율 9.8배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.6264910&slng=127.0285530&sname=37%EC%9C%84%20A&dlat=37.6268547&dlng=127.0283997&dname=37%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">38위</div>
+
+        <div class="info">
+            직선거리 49.7m<br>
+            기존 우회거리 382.5m<br>
+            기존 우회비율 8.7배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5259424&slng=126.8965770&sname=38%EC%9C%84%20A&dlat=37.5258936&dlng=126.8971358&dname=38%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">39위</div>
+
+        <div class="info">
+            직선거리 57.8m<br>
+            기존 우회거리 443.2m<br>
+            기존 우회비율 8.7배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5499412&slng=126.9382335&sname=39%EC%9C%84%20A&dlat=37.5502047&dlng=126.9387986&dname=39%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">40위</div>
+
+        <div class="info">
+            직선거리 34.5m<br>
+            기존 우회거리 499.5m<br>
+            기존 우회비율 15.5배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5296006&slng=127.1492029&sname=40%EC%9C%84%20A&dlat=37.5296356&dlng=127.1488149&dname=40%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">41위</div>
+
+        <div class="info">
+            직선거리 37.7m<br>
+            기존 우회거리 319.3m<br>
+            기존 우회비율 9.5배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.4860604&slng=126.9372816&sname=41%EC%9C%84%20A&dlat=37.4863626&dlng=126.9374767&dname=41%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">42위</div>
+
+        <div class="info">
+            직선거리 55.6m<br>
+            기존 우회거리 424.5m<br>
+            기존 우회비율 8.6배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5607260&slng=126.9783622&sname=42%EC%9C%84%20A&dlat=37.5611928&dlng=126.9781321&dname=42%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">43위</div>
+
+        <div class="info">
+            직선거리 58.9m<br>
+            기존 우회거리 444.4m<br>
+            기존 우회비율 8.5배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.4930093&slng=126.8565823&sname=43%EC%9C%84%20A&dlat=37.4930592&dlng=126.8559188&dname=43%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">44위</div>
+
+        <div class="info">
+            직선거리 52.4m<br>
+            기존 우회거리 464.4m<br>
+            기존 우회비율 9.9배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5133906&slng=126.9525083&sname=44%EC%9C%84%20A&dlat=37.5134905&dlng=126.9519286&dname=44%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">45위</div>
+
+        <div class="info">
+            직선거리 54.6m<br>
+            기존 우회거리 410.8m<br>
+            기존 우회비율 8.5배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.6129743&slng=127.0086729&sname=45%EC%9C%84%20A&dlat=37.6134510&dlng=127.0085215&dname=45%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">46위</div>
+
+        <div class="info">
+            직선거리 59.0m<br>
+            기존 우회거리 1175.8m<br>
+            기존 우회비율 20.9배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.4757464&slng=126.9665487&sname=46%EC%9C%84%20A&dlat=37.4762658&dlng=126.9666931&dname=46%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">47위</div>
+
+        <div class="info">
+            직선거리 46.2m<br>
+            기존 우회거리 358.0m<br>
+            기존 우회비율 8.7배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5057383&slng=126.8605121&sname=47%EC%9C%84%20A&dlat=37.5059591&dlng=126.8609555&dname=47%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">48위</div>
+
+        <div class="info">
+            직선거리 32.7m<br>
+            기존 우회거리 333.5m<br>
+            기존 우회비율 11.2배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.6619781&slng=127.0131055&sname=48%EC%9C%84%20A&dlat=37.6620377&dlng=127.0134684&dname=48%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">49위</div>
+
+        <div class="info">
+            직선거리 56.5m<br>
+            기존 우회거리 528.3m<br>
+            기존 우회비율 10.4배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.4826654&slng=127.0047630&sname=49%EC%9C%84%20A&dlat=37.4831206&dlng=127.0050486&dname=49%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">50위</div>
+
+        <div class="info">
+            직선거리 49.1m<br>
+            기존 우회거리 362.5m<br>
+            기존 우회비율 8.4배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.6032993&slng=127.0118100&sname=50%EC%9C%84%20A&dlat=37.6035793&dlng=127.0122413&dname=50%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">51위</div>
+
+        <div class="info">
+            직선거리 24.5m<br>
+            기존 우회거리 311.0m<br>
+            기존 우회비율 13.7배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.6037370&slng=127.0146259&sname=51%EC%9C%84%20A&dlat=37.6038537&dlng=127.0148618&dname=51%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">52위</div>
+
+        <div class="info">
+            직선거리 49.7m<br>
+            기존 우회거리 358.1m<br>
+            기존 우회비율 8.2배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5180120&slng=126.9053879&sname=52%EC%9C%84%20A&dlat=37.5183666&dlng=126.9057307&dname=52%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">53위</div>
+
+        <div class="info">
+            직선거리 58.1m<br>
+            기존 우회거리 419.2m<br>
+            기존 우회비율 8.2배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5391020&slng=126.9616538&sname=53%EC%9C%84%20A&dlat=37.5396259&dlng=126.9616636&dname=53%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">54위</div>
+
+        <div class="info">
+            직선거리 40.6m<br>
+            기존 우회거리 303.5m<br>
+            기존 우회비율 8.5배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.6316697&slng=127.0499588&sname=54%EC%9C%84%20A&dlat=37.6317077&dlng=127.0495013&dname=54%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">55위</div>
+
+        <div class="info">
+            직선거리 43.4m<br>
+            기존 우회거리 880.7m<br>
+            기존 우회비율 21.3배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5460611&slng=126.9603888&sname=55%EC%9C%84%20A&dlat=37.5462539&dlng=126.9599615&dname=55%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">56위</div>
+
+        <div class="info">
+            직선거리 29.8m<br>
+            기존 우회거리 571.9m<br>
+            기존 우회비율 20.2배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5466123&slng=126.9614095&sname=56%EC%9C%84%20A&dlat=37.5468737&dlng=126.9614860&dname=56%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">57위</div>
+
+        <div class="info">
+            직선거리 53.7m<br>
+            기존 우회거리 384.5m<br>
+            기존 우회비율 8.2배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5495373&slng=126.9130003&sname=57%EC%9C%84%20A&dlat=37.5497682&dlng=126.9135351&dname=57%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">58위</div>
+
+        <div class="info">
+            직선거리 55.3m<br>
+            기존 우회거리 393.1m<br>
+            기존 우회비율 8.1배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5456256&slng=126.9468062&sname=58%EC%9C%84%20A&dlat=37.5461202&dlng=126.9467302&dname=58%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">59위</div>
+
+        <div class="info">
+            직선거리 39.1m<br>
+            기존 우회거리 330.6m<br>
+            기존 우회비율 9.5배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5770567&slng=127.0228916&sname=59%EC%9C%84%20A&dlat=37.5771318&dlng=127.0233241&dname=59%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">60위</div>
+
+        <div class="info">
+            직선거리 27.7m<br>
+            기존 우회거리 298.4m<br>
+            기존 우회비율 11.8배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.6459331&slng=127.0662417&sname=60%EC%9C%84%20A&dlat=37.6460840&dlng=127.0664920&dname=60%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">61위</div>
+
+        <div class="info">
+            직선거리 31.9m<br>
+            기존 우회거리 298.1m<br>
+            기존 우회비율 10.3배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5454888&slng=126.9856007&sname=61%EC%9C%84%20A&dlat=37.5457765&dlng=126.9856144&dname=61%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">62위</div>
+
+        <div class="info">
+            직선거리 49.2m<br>
+            기존 우회거리 343.8m<br>
+            기존 우회비율 8.0배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5429913&slng=126.8425294&sname=62%EC%9C%84%20A&dlat=37.5426533&dlng=126.8428894&dname=62%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">63위</div>
+
+        <div class="info">
+            직선거리 34.9m<br>
+            기존 우회거리 293.5m<br>
+            기존 우회비율 9.4배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5568754&slng=126.9472284&sname=63%EC%9C%84%20A&dlat=37.5571723&dlng=126.9473602&dname=63%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">64위</div>
+
+        <div class="info">
+            직선거리 56.2m<br>
+            기존 우회거리 391.1m<br>
+            기존 우회비율 8.0배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5706788&slng=127.0017431&sname=64%EC%9C%84%20A&dlat=37.5711328&dlng=127.0014618&dname=64%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">65위</div>
+
+        <div class="info">
+            직선거리 39.0m<br>
+            기존 우회거리 291.0m<br>
+            기존 우회비율 8.5배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.4875421&slng=126.9462079&sname=65%EC%9C%84%20A&dlat=37.4876734&dlng=126.9466177&dname=65%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">66위</div>
+
+        <div class="info">
+            직선거리 47.2m<br>
+            기존 우회거리 399.3m<br>
+            기존 우회비율 9.5배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5897327&slng=127.0089392&sname=66%EC%9C%84%20A&dlat=37.5900228&dlng=127.0085478&dname=66%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">67위</div>
+
+        <div class="info">
+            직선거리 46.5m<br>
+            기존 우회거리 320.9m<br>
+            기존 우회비율 7.9배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.4961118&slng=127.1318379&sname=67%EC%9C%84%20A&dlat=37.4964326&dlng=127.1314995&dname=67%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">68위</div>
+
+        <div class="info">
+            직선거리 45.5m<br>
+            기존 우회거리 313.7m<br>
+            기존 우회비율 7.9배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.6612992&slng=127.0275537&sname=68%EC%9C%84%20A&dlat=37.6613703&dlng=127.0280623&dname=68%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">69위</div>
+
+        <div class="info">
+            직선거리 58.9m<br>
+            기존 우회거리 405.4m<br>
+            기존 우회비율 7.9배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5334244&slng=126.9947122&sname=69%EC%9C%84%20A&dlat=37.5333942&dlng=126.9940465&dname=69%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">70위</div>
+
+        <div class="info">
+            직선거리 58.2m<br>
+            기존 우회거리 413.1m<br>
+            기존 우회비율 8.1배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.4739839&slng=126.9335559&sname=70%EC%9C%84%20A&dlat=37.4745011&dlng=126.9334464&dname=70%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">71위</div>
+
+        <div class="info">
+            직선거리 49.6m<br>
+            기존 우회거리 336.8m<br>
+            기존 우회비율 7.8배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.6019119&slng=127.0143250&sname=71%EC%9C%84%20A&dlat=37.6018064&dlng=127.0137788&dname=71%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">72위</div>
+
+        <div class="info">
+            직선거리 34.5m<br>
+            기존 우회거리 285.2m<br>
+            기존 우회비율 9.3배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5140030&slng=126.9514887&sname=72%EC%9C%84%20A&dlat=37.5142388&dlng=126.9517428&dname=72%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">73위</div>
+
+        <div class="info">
+            직선거리 42.1m<br>
+            기존 우회거리 283.0m<br>
+            기존 우회비율 7.7배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5550750&slng=127.1549546&sname=73%EC%9C%84%20A&dlat=37.5554265&dlng=127.1547752&dname=73%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">74위</div>
+
+        <div class="info">
+            직선거리 31.8m<br>
+            기존 우회거리 451.5m<br>
+            기존 우회비율 15.2배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5360865&slng=127.0934324&sname=74%EC%9C%84%20A&dlat=37.5361984&dlng=127.0937636&dname=74%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">75위</div>
+
+        <div class="info">
+            직선거리 34.9m<br>
+            기존 우회거리 323.8m<br>
+            기존 우회비율 10.3배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.4964963&slng=126.9854335&sname=75%EC%9C%84%20A&dlat=37.4965378&dlng=126.9858253&dname=75%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">76위</div>
+
+        <div class="info">
+            직선거리 33.3m<br>
+            기존 우회거리 284.1m<br>
+            기존 우회비율 9.5배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.4974916&slng=126.9871783&sname=76%EC%9C%84%20A&dlat=37.4976673&dlng=126.9874844&dname=76%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">77위</div>
+
+        <div class="info">
+            직선거리 23.3m<br>
+            기존 우회거리 338.9m<br>
+            기존 우회비율 15.5배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5083562&slng=127.0122188&sname=77%EC%9C%84%20A&dlat=37.5081815&dlng=127.0123656&dname=77%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">78위</div>
+
+        <div class="info">
+            직선거리 57.5m<br>
+            기존 우회거리 402.7m<br>
+            기존 우회비율 8.0배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5366543&slng=127.0686524&sname=78%EC%9C%84%20A&dlat=37.5366818&dlng=127.0693028&dname=78%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">79위</div>
+
+        <div class="info">
+            직선거리 46.8m<br>
+            기존 우회거리 308.7m<br>
+            기존 우회비율 7.6배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5614406&slng=126.8096203&sname=79%EC%9C%84%20A&dlat=37.5618273&dlng=126.8098311&dname=79%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">80위</div>
+
+        <div class="info">
+            직선거리 54.8m<br>
+            기존 우회거리 385.5m<br>
+            기존 우회비율 8.0배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.4849511&slng=127.1327897&sname=80%EC%9C%84%20A&dlat=37.4849930&dlng=127.1321723&dname=80%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">81위</div>
+
+        <div class="info">
+            직선거리 48.4m<br>
+            기존 우회거리 314.3m<br>
+            기존 우회비율 7.5배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5610008&slng=126.9793510&sname=81%EC%9C%84%20A&dlat=37.5613692&dlng=126.9790577&dname=81%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">82위</div>
+
+        <div class="info">
+            직선거리 54.4m<br>
+            기존 우회거리 351.4m<br>
+            기존 우회비율 7.5배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5117296&slng=126.9542467&sname=82%EC%9C%84%20A&dlat=37.5120256&dlng=126.9537566&dname=82%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">83위</div>
+
+        <div class="info">
+            직선거리 32.4m<br>
+            기존 우회거리 387.1m<br>
+            기존 우회비율 12.9배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5686252&slng=126.9945965&sname=83%EC%9C%84%20A&dlat=37.5683418&dlng=126.9945080&dname=83%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">84위</div>
+
+        <div class="info">
+            직선거리 55.8m<br>
+            기존 우회거리 484.0m<br>
+            기존 우회비율 9.7배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5394833&slng=127.1212457&sname=84%EC%9C%84%20A&dlat=37.5396000&dlng=127.1218600&dname=84%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">85위</div>
+
+        <div class="info">
+            직선거리 26.6m<br>
+            기존 우회거리 460.2m<br>
+            기존 우회비율 18.3배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.4923627&slng=126.9469883&sname=85%EC%9C%84%20A&dlat=37.4926011&dlng=126.9469582&dname=85%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">86위</div>
+
+        <div class="info">
+            직선거리 36.2m<br>
+            기존 우회거리 439.0m<br>
+            기존 우회비율 13.1배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.4921536&slng=126.9484545&sname=86%EC%9C%84%20A&dlat=37.4924587&dlng=126.9483107&dname=86%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">87위</div>
+
+        <div class="info">
+            직선거리 37.6m<br>
+            기존 우회거리 270.1m<br>
+            기존 우회비율 8.2배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.6359122&slng=127.0215414&sname=87%EC%9C%84%20A&dlat=37.6362108&dlng=127.0213396&dname=87%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">88위</div>
+
+        <div class="info">
+            직선거리 31.9m<br>
+            기존 우회거리 407.7m<br>
+            기존 우회비율 13.8배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5679225&slng=126.9878622&sname=88%EC%9C%84%20A&dlat=37.5682099&dlng=126.9878626&dname=88%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">89위</div>
+
+        <div class="info">
+            직선거리 35.1m<br>
+            기존 우회거리 269.6m<br>
+            기존 우회비율 8.7배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.6675710&slng=127.0572735&sname=89%EC%9C%84%20A&dlat=37.6675566&dlng=127.0576714&dname=89%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">90위</div>
+
+        <div class="info">
+            직선거리 53.2m<br>
+            기존 우회거리 336.0m<br>
+            기존 우회비율 7.3배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5079781&slng=127.0111095&sname=90%EC%9C%84%20A&dlat=37.5084067&dlng=127.0108390&dname=90%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">91위</div>
+
+        <div class="info">
+            직선거리 46.3m<br>
+            기존 우회거리 292.2m<br>
+            기존 우회비율 7.3배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5352032&slng=127.0676758&sname=91%EC%9C%84%20A&dlat=37.5355065&dlng=127.0680365&dname=91%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">92위</div>
+
+        <div class="info">
+            직선거리 50.5m<br>
+            기존 우회거리 318.6m<br>
+            기존 우회비율 7.3배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.6631197&slng=127.0282053&sname=92%EC%9C%84%20A&dlat=37.6631640&dlng=127.0276350&dname=92%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">93위</div>
+
+        <div class="info">
+            직선거리 48.8m<br>
+            기존 우회거리 307.5m<br>
+            기존 우회비율 7.3배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5841047&slng=126.9238069&sname=93%EC%9C%84%20A&dlat=37.5843243&dlng=126.9242860&dname=93%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">94위</div>
+
+        <div class="info">
+            직선거리 30.9m<br>
+            기존 우회거리 276.1m<br>
+            기존 우회비율 9.9배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.6214945&slng=126.9265139&sname=94%EC%9C%84%20A&dlat=37.6212833&dlng=126.9267416&dname=94%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">95위</div>
+
+        <div class="info">
+            직선거리 34.3m<br>
+            기존 우회거리 265.2m<br>
+            기존 우회비율 8.7배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.6172077&slng=127.0082651&sname=95%EC%9C%84%20A&dlat=37.6173662&dlng=127.0085994&dname=95%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">96위</div>
+
+        <div class="info">
+            직선거리 43.6m<br>
+            기존 우회거리 510.1m<br>
+            기존 우회비율 12.7배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.4708367&slng=127.0924343&sname=96%EC%9C%84%20A&dlat=37.4710419&dlng=127.0920139&dname=96%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">97위</div>
+
+        <div class="info">
+            직선거리 58.4m<br>
+            기존 우회거리 384.3m<br>
+            기존 우회비율 7.6배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5284274&slng=127.0313259&sname=97%EC%9C%84%20A&dlat=37.5289400&dlng=127.0311767&dname=97%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">98위</div>
+
+        <div class="info">
+            직선거리 31.4m<br>
+            기존 우회거리 941.6m<br>
+            기존 우회비율 30.9배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5411485&slng=126.9544912&sname=98%EC%9C%84%20A&dlat=37.5413743&dlng=126.9547064&dname=98%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">99위</div>
+
+        <div class="info">
+            직선거리 31.4m<br>
+            기존 우회거리 263.8m<br>
+            기존 우회비율 9.4배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.6126149&slng=127.0344946&sname=99%EC%9C%84%20A&dlat=37.6127924&dlng=127.0347718&dname=99%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">100위</div>
+
+        <div class="info">
+            직선거리 46.0m<br>
+            기존 우회거리 286.0m<br>
+            기존 우회비율 7.2배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.6043703&slng=127.0117641&sname=100%EC%9C%84%20A&dlat=37.6046893&dlng=127.0120977&dname=100%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">101위</div>
+
+        <div class="info">
+            직선거리 42.3m<br>
+            기존 우회거리 262.8m<br>
+            기존 우회비율 7.2배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5015234&slng=127.0117286&sname=101%EC%9C%84%20A&dlat=37.5016394&dlng=127.0121849&dname=101%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">102위</div>
+
+        <div class="info">
+            직선거리 56.6m<br>
+            기존 우회거리 351.3m<br>
+            기존 우회비율 7.2배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5870695&slng=127.0335867&sname=102%EC%9C%84%20A&dlat=37.5875533&dlng=127.0333832&dname=102%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">103위</div>
+
+        <div class="info">
+            직선거리 43.5m<br>
+            기존 우회거리 1372.9m<br>
+            기존 우회비율 32.5배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.4934705&slng=126.8954356&sname=103%EC%9C%84%20A&dlat=37.4936412&dlng=126.8949922&dname=103%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">104위</div>
+
+        <div class="info">
+            직선거리 41.7m<br>
+            기존 우회거리 261.8m<br>
+            기존 우회비율 7.3배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.5274424&slng=127.1363154&sname=104%EC%9C%84%20A&dlat=37.5275716&dlng=127.1358720&dname=104%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+    <div class="card">
+        <div class="rank">105위</div>
+
+        <div class="info">
+            직선거리 44.6m<br>
+            기존 우회거리 366.6m<br>
+            기존 우회비율 9.2배
+        </div>
+
+        <a class="btn" href="nmap://route/walk?slat=37.4820201&slng=127.1245364&sname=105%EC%9C%84%20A&dlat=37.4823425&dlng=127.1248385&dname=105%EC%9C%84%20B&appname=livinglab">
+            네이버지도에서 확인
+        </a>
+    </div>
+    
+
+</body>
+</html>
